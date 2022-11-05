@@ -79,9 +79,21 @@ print(cstr.rjust(40, '-'))
 
 # List
 list1 = ['this', 'is', 'python', 'programing', 100]
+lis2 = ['art', 'education', 'sports']
 print(list1[2])
 print(list1[-4])
 print(type(list1[-1]))
+print(list1[1:3])
+print(list1[::-1])  # reverse the list
+print(list1.extend(lis2))  # adds items of lis2 to list1
+print(list1.append('world'))  # adds item at last
+print(list1.insert(2, 'hello'))  # inserts item at a specific position
+list1.remove('this')
+list1.pop()  # removes last item
+list1.sort()  # sorts aplhabetical order
+list1.sort(reverse=True)  # sorts in reverse order
+list1.reverse()  # reverse it
+
 
 # Tuple
 Tuple4 = tuple('geeks')
