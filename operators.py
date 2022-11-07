@@ -1,7 +1,7 @@
 import operator
 
 # Python code to demonstrate working of
-# setitem(), delitem() and getitem()
+# operator.setitem(), .delitem() and .getitem()
 # operator.add() .sub() .mul() .truediv() .floordiv() etc...
 #operator.setitem(obj, pos, val) .delitem(obj, pos) .get(obj, pos)
 
@@ -10,8 +10,12 @@ li = [1, 5, 6, 7, 8]
 
 # printing original list
 print("The original list is : ", end="")
+
 for i in range(0, len(li)):
     print(li[i], end=" ")
+print()
+for i, x in enumerate(li):  # for loop with enumerate method
+    print(i, x)
 
 print("\r")
 

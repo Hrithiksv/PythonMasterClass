@@ -47,6 +47,7 @@ st1 = "I'm hrithik"
 print(st1)
 print(st1[0])
 print(st1[-1])
+del st1
 
 # Python program to
 # format a output using
@@ -75,6 +76,20 @@ print("The right aligned string is : ")
 print(cstr.rjust(40, '-'))
 """The right aligned string is : 
 --------------------I love geeksforgeeks"""
+
+# String alignment
+String1 = "|{:<10}|{:^10}|{:>10}|".format('Geeks',
+                                          'for',
+                                          'Geeks')
+print("\nLeft, center and right alignment with Formatting: ")
+print(String1)
+# Left, center and right alignment with Formatting:
+# |Geeks     |   for    |     Geeks|
+# To demonstrate aligning of spaces
+String1 = "\n{0:^16} was founded in {1:<4}!".format("GeeksforGeeks",
+                                                    2009)
+print(String1)
+# GeeksforGeeks   was founded in 2009 !
 # ==============================================================
 
 # List
@@ -93,6 +108,8 @@ list1.pop()  # removes last item
 list1.sort()  # sorts aplhabetical order
 list1.sort(reverse=True)  # sorts in reverse order
 list1.reverse()  # reverse it
+
+list1_srt = ','.join(list1)
 
 
 # Tuple
@@ -114,6 +131,12 @@ x = {1+2+2+3+4+5}  # this is a set
 for i in set1:
     print(i)
 
+set4 = {1, 2, 3, 4}
+set5 = {3, 4, 5, 5, 6}
+print(set4.intersection(set5))
+print(set4.difference(set5))
+print(set4.union(set5))
+
 print(set1)
 print(sorted(set1))  # sorted didnt work for string argument
 set2 = set(["geeks", "for", "geeks"])
@@ -123,11 +146,30 @@ lst = [1, 2, 2, 8, 7, 9, 0, 6, 3, 4, 1, 4, 5]
 print("printing set of list ", set(lst))
 
 # Dictionarys
+'''clear() – Remove all the elements from the dictionary
+copy() – Returns a copy of the dictionary
+get() – Returns the value of specified key
+items() – Returns a list containing a tuple for each key value pair
+keys() – Returns a list containing dictionary’s keys
+pop() – Remove the element with specified key
+popitem() – Removes the last inserted key-value pair
+update() – Updates dictionary with specified key-value pairs
+values() – Returns a list of all the values of dictionary'''
 #               1           2            3
 Dict1 = {1: "hrithik", 2: "welcome", 3: [1, 2, .4]}
 print(Dict1)
 print(Dict1.get(2))  # Index starts from 1 not 0
 print(Dict1[1])
+Dict1[4] = "to"      # adding elements to dictionary
+Dict1[5] = "Hassan"
+# Creating a Dictionary
+Dict = {'Dict1': {1: 'Geeks'},
+        'Dict2': {'Name': 'For'}}
+
+# Accessing element using key
+print(Dict['Dict1'])
+print(Dict['Dict1'][1])
+print(Dict['Dict2']['Name'])
 
 # Operators
 a1 = 8

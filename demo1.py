@@ -1,4 +1,3 @@
-"""
 import sys
 import requests
 import math
@@ -11,7 +10,7 @@ print(sys.executable)
 
 r = requests.get('http://google.com')
 print(r.status_code)
-"""
+
 # Using for loop
 for i in range(10):
 
