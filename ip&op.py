@@ -45,3 +45,8 @@ print('Hello Geeks!!', file=dummy_file)
 
 # get the value from dummy file
 dummy_file.getvalue()
+
+# rounding of to two decimsl places
+nm = 2.345
+x1 = "{:.2f}".format(nm)
+print(x1)
