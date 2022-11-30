@@ -50,3 +50,20 @@ dummy_file.getvalue()
 nm = 2.345
 x1 = "{:.2f}".format(nm)
 print(x1)
+
+# some string formats
+fname = 'hrithik'
+lname = 'V'
+fullname = f"{fname} {lname}"
+print(fullname)
+
+# some functions with parameters
+
+
+def myfun(**kwargs):
+    for key, value in kwargs.items():
+        # this is treated as dict so must use .items() to iterate through values
+        print(f"{key} == {value}")
+
+
+myfun(first='hello', second='welcome', third='Python')

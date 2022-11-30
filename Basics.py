@@ -59,23 +59,23 @@ cstr = "I love geeksforgeeks"
 # string with fillchr
 print("Center aligned string with fillchr: ")
 print(cstr.center(40, '#'))
-"""Output:
-Center aligned string with fillchr: 
-##########I love geeksforgeeks##########"""
+# Output:
+# Center aligned string with fillchr:
+# ##########I love geeksforgeeks##########
 
 # Printing the left aligned
 # string with "-" padding
 print("The left aligned string is : ")
 print(cstr.ljust(40, '-'))
-"""The left aligned string is : 
-I love geeksforgeeks--------------------"""
+# The left aligned string is :
+# I love geeksforgeeks--------------------
 
 # Printing the right aligned string
 # with "-" padding
 print("The right aligned string is : ")
 print(cstr.rjust(40, '-'))
-"""The right aligned string is : 
---------------------I love geeksforgeeks"""
+# The right aligned string is :
+# --------------------I love geeksforgeeks
 
 # String alignment
 String1 = "|{:<10}|{:^10}|{:>10}|".format('Geeks',
@@ -132,7 +132,7 @@ for i in set1:
     print(i)
 
 set4 = {1, 2, 3, 4}
-set5 = {3, 4, 5, 5, 6}
+set5 = {3, 4, 5, 6}
 print(set4.intersection(set5))
 print(set4.difference(set5))
 print(set4.union(set5))
@@ -146,15 +146,16 @@ lst = [1, 2, 2, 8, 7, 9, 0, 6, 3, 4, 1, 4, 5]
 print("printing set of list ", set(lst))
 
 # Dictionarys
-'''clear() – Remove all the elements from the dictionary
-copy() – Returns a copy of the dictionary
-get() – Returns the value of specified key
-items() – Returns a list containing a tuple for each key value pair
-keys() – Returns a list containing dictionary’s keys
-pop() – Remove the element with specified key
-popitem() – Removes the last inserted key-value pair
-update() – Updates dictionary with specified key-value pairs
-values() – Returns a list of all the values of dictionary'''
+# clear() – Remove all the elements from the dictionary
+# copy() – Returns a copy of the dictionary
+# get(key,default msg if not found) – Returns the value of specified key
+# items() – Returns a list containing a tuple for each key value pair
+# keys() – Returns a list containing dictionary’s keys
+# pop() – Remove the element with specified key
+# popitem() – Removes the last inserted key-value pair
+# update() – Updates dictionary with specified key-value pairs
+# values() – Returns a list of all the values of dictionary
+# del dictname(key)
 #               1           2            3
 Dict1 = {1: "hrithik", 2: "welcome", 3: [1, 2, .4]}
 print(Dict1)

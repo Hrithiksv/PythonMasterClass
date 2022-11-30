@@ -18,7 +18,7 @@ def is_prime(n):
 t0 = time.time()
 count = 0
 nw_lst = []
-for n in range(1, 1000):
+for n in range(1, 100):
     x = is_prime(n)
     if x:
         nw_lst.append(n)
